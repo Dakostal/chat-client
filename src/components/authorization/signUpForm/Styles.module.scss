@@ -1,0 +1,147 @@
+.container {
+    width: 700px;
+    height: 770px;
+    border-radius: 25px;
+    background-color: #202428;
+    margin: auto;
+}
+
+.navLinks {
+    display: flex;
+    justify-content: center; /* Раздвигаем ссылки */
+    align-items: center;
+    background-color: #202428; /* Темный фон */
+    padding: 10px 0;
+    position: relative;
+    border-bottom: 2px solid #444;
+    gap: 200px;
+    margin-bottom: 50px;
+}
+
+.navLinks a {
+    text-decoration: none;
+    font-size: 32px;
+    color: #6b6b6b; /* Серый цвет для неактивной ссылки */
+    padding-bottom: 5px;
+    transition: color 0.3s ease;
+    position: relative;
+}
+
+.navLinks a.active {
+    color: #ffffff; /* Белый цвет активной ссылки */
+    font-weight: bold;
+}
+
+.navLinks a.active::after {
+    content: '';
+    display: block;
+    width: auto;
+    height: 2px;
+    background-color: #a668ff; /* Фиолетовая линия под активной ссылкой */
+    position: absolute;
+    bottom: -10px; /* Отступ снизу */
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    transition: width 0.3s ease;
+}
+
+.navLinks a:hover {
+    color: #ffffff;
+}
+
+.navLinks a.login {
+    color: #6b6b6b;
+}
+
+/* Для эффекта при наведении на неактивные ссылки */
+.navLinks a:not(.active):hover::after {
+    content: '';
+    display: block;
+    width: auto;
+    height: 2px;
+    background-color: #a668ff; /* Фиолетовая линия под неактивной ссылкой при наведении */
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    transition: width 0.3s ease;
+}
+
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 600px;
+    height: 78px;
+    border-radius: 20px;
+    margin-top: auto;
+    margin-left: 50px;
+
+    background-color: #933CEB;
+    font-size: 32px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.inputContainer{
+	position:relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+	margin-bottom:25px;
+    margin-left: 50px;
+}
+.inputContainer label{
+	font-size: 20px;
+	color: #ffffff44;	
+	transition: all 0.5s ease-in-out;
+}
+.inputContainer input{ 
+    border-radius: 12px;
+    border-bottom: 1px solid #555;  
+    background-color: #171B1F;
+    width: 600px;
+    padding: 30px 0 5px 0;
+    font-size: 16px;
+    color: #fff;
+}
+
+.inputContainer input:focus{ 
+    border:none;	
+    outline:none;
+    border:1px solid #933CEB;	
+   }
+
+.checkboxWrapper {
+    display: block;
+    position: relative;
+    margin: 50px 0px 30px 50px;
+    width: 100%;
+    padding-left: 25px;
+
+}
+
+.checkbox {
+    appearance: none;
+    position: absolute;
+    top: 2px;
+    left: 0;
+    margin: 0;
+    width: 18px;
+    height: 18px;
+    border: 1px solid #933CEB;
+    border-radius: 2px;
+}
+
+.checkbox p {
+    font-size: 16px;
+    line-height: 1.2;
+    color: #fff;
+}
+
+.checkbox:checked {
+    background-color: #933CEB;
+}

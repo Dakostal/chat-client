@@ -1,3 +1,13 @@
+* {
+  font-family: Roboto;
+}
+#root {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  width: 100vw;
+  min-height: 100vh;
+}
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -23,10 +33,10 @@ a:hover {
 }
 
 body {
+  background-color: #171B1F;
   margin: 0;
-  display: flex;
   place-items: center;
-  min-width: 320px;
+  width: 100vw;
   min-height: 100vh;
 }
 
