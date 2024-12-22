@@ -1,8 +1,14 @@
-// import style from "./Styles.module.scss"
-import SignUpForm from "./signUpForm/SignUpForm"
+import SignUpForm from "./signUpForm/SignUpForm";
+// import SignInForm from "./signInForm/SignInForm";
 const Authorization = () => {
     return (
-        <SignUpForm />
+        <>
+            {/* <SignInForm /> */}
+            <SignUpForm />
+        </>
+
+
+
     )
     
 }

@@ -1,0 +1,29 @@
+.checkboxWrapper {
+    display: block;
+    position: relative;
+    width: 100%;
+    padding-left: 25px;
+
+}
+
+.checkbox {
+    appearance: none;
+    position: absolute;
+    top: 2px;
+    left: 0;
+    margin: 0;
+    width: 18px;
+    height: 18px;
+    border: 1px solid #933CEB;
+    border-radius: 2px;
+}
+
+.checkbox p {
+    font-size: 16px;
+    line-height: 1.2;
+    color: #fff;
+}
+
+.checkbox:checked {
+    background-color: #933CEB;
+}

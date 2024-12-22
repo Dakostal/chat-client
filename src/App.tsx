@@ -5,6 +5,7 @@ import Authorization from './components/authorization/Authorization'
 function App() {
   return (
     <>
+    
       <Authorization />
     </>
   )

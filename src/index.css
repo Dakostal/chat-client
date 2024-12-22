@@ -1,5 +1,5 @@
 * {
-  font-family: Roboto;
+  font-family: sans-serif;
 }
 #root {
   display: flex;
@@ -43,6 +43,14 @@ body {
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
+}
+
+input {
+  border: none;
+}
+
+input:focus-visible {
+  outline: none;  
 }
 
 button {
